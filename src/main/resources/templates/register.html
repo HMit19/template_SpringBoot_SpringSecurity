@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<h1>register</h1>
+<form action="/register" method="post">
+    <input type="text" name="username" placeholder="username"><br>
+    <input type="password" name="password" placeholder="password"><br>
+    <input type="password" name="confirmPassword" placeholder="confirmPassword"><br>
+    <button type="register">Register</button>
+</form>
+</body>
+</html>
